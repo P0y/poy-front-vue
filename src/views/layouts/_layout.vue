@@ -1,8 +1,18 @@
 <template>
   <div :class="$style.container">
+    <NavBar />
     <slot />
   </div>
 </template>
+
+<script>
+import NavBar from '../../components/nav-bar.vue'
+
+export default {
+  name: "Layout",
+  components: { NavBar }
+}
+</script>
 
 <style lang="scss" module>
 
